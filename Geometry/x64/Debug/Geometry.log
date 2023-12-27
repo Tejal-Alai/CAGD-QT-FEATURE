@@ -1,0 +1,19 @@
+﻿  pch.cpp
+  dllmain.cpp
+  Geometry.cpp
+  Line.cpp
+  Point.cpp
+  Shape.cpp
+D:\TejalWorkspace\QT\Visulizer\Geometry\Shape.h(26,21): warning C4251: 'Shape::mPoints': class 'std::vector<Point,std::allocator<Point>>' needs to have dll-interface to be used by clients of class 'Shape'
+  (compiling source file '/Shape.cpp')
+  D:\TejalWorkspace\QT\Visulizer\Geometry\Shape.h(14,22):
+  see declaration of 'std::vector<Point,std::allocator<Point>>'
+  
+D:\TejalWorkspace\QT\Visulizer\Geometry\Shape.h(27,20): warning C4251: 'Shape::mPolyLines': class 'std::vector<Line,std::allocator<Line>>' needs to have dll-interface to be used by clients of class 'Shape'
+  (compiling source file '/Shape.cpp')
+  D:\TejalWorkspace\QT\Visulizer\Geometry\Shape.h(10,19):
+  see declaration of 'std::vector<Line,std::allocator<Line>>'
+  
+  Generating Code...
+     Creating library D:\TejalWorkspace\QT\Visulizer\x64\Debug\Geometry.lib and object D:\TejalWorkspace\QT\Visulizer\x64\Debug\Geometry.exp
+  Geometry.vcxproj -> D:\TejalWorkspace\QT\Visulizer\x64\Debug\Geometry.dll

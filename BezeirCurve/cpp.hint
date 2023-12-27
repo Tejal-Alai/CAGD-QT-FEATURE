@@ -1,0 +1,2 @@
+#define BEZEIRCURVE_API __declspec(dllexport)
+#define BEZEIRCURVE_API __declspec(dllimport)

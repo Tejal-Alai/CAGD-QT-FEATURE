@@ -1,0 +1,18 @@
+﻿  pch.cpp
+  BezeirCurve.cpp
+D:\TejalWorkspace\QT\Visulizer\BezeirCurve\BezeirCurve.cpp(23,35): warning C4305: '+=': truncation from 'double' to 'float'
+  (compiling source file '/BezeirCurve.cpp')
+  
+D:\TejalWorkspace\QT\Visulizer\BezeirCurve\BezeirCurve.cpp(26,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/BezeirCurve.cpp')
+  
+D:\TejalWorkspace\QT\Visulizer\BezeirCurve\BezeirCurve.cpp(27,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/BezeirCurve.cpp')
+  
+D:\TejalWorkspace\QT\Visulizer\BezeirCurve\BezeirCurve.cpp(28,17): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  (compiling source file '/BezeirCurve.cpp')
+  
+  dllmain.cpp
+  Generating Code...
+     Creating library D:\TejalWorkspace\QT\Visulizer\x64\Debug\BezeirCurve.lib and object D:\TejalWorkspace\QT\Visulizer\x64\Debug\BezeirCurve.exp
+  BezeirCurve.vcxproj -> D:\TejalWorkspace\QT\Visulizer\x64\Debug\BezeirCurve.dll

@@ -1,0 +1,2 @@
+#define TRANSFORM_API __declspec(dllexport)
+#define TRANSFORM_API __declspec(dllimport)
