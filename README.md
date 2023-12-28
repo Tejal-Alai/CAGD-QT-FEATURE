@@ -1,11 +1,15 @@
-# Visulizer
+# CAGD-QT-FEATURE
+
+# Visualizer
 
 ## Overview
-
+This is an extension of project CAGD-QT in which I have implemented shaders and automated OpenGL.
 The Visualizer project is designed to provide a graphical interface for performing various transformation operations and clipping on geometric shapes. 
 The project is organized into three main components: Geometry, Algorithm, and Visualizer.
 
-### 1. Geometry DLL
+### DLLs
+
+#### 1. Geometry DLL
 
 The Geometry DLL contains classes and functions for handling geometric entities such as points, lines, and shapes. It serves as the foundational library for storing and manipulating geometric data within the Visualizer project.
  
@@ -17,19 +21,33 @@ Classes:
 
 + Shape: Base class for different geometric shapes.
 
-### 2. Algorithm DLL
-The Algorithm DLL includes classes and functions related to clipping and geometric transformations. 
-This DLL provides the necessary algorithms for operations like translation, rotation, scaling, and clipping.
+#### 2. Transformations DLL
+Overview:
+The Transformations DLL provides functions for translating, rotating, and scaling shapes.
 
 Files:
+Transform.cpp: Implements the Transform class with methods for translation, rotation, and scaling.
 
-+ Transformation.cpp: Contains functions for translating, rotating, and scaling geometric entities.
+#### 3. Clipping DLL
+Overview:
+The Clipping DLL contains the algorithm for clipping shapes against a specified region.
 
-+ Clipping.cpp: Implements clipping algorithm.
+Files:
+Clipping.cpp: Defines the Clipping class for clipping shapes based on a region.
+#### 4. Bezier Curve DLL
+Overview:
+The BezierCurve DLL offers functionality for generating Bezier and Hermite curves.
 
-### 3. Visualizer (Main Project)
+Files:
++ BezierCurve.cpp: Implements the BezierCurve class for drawing Bezier curves.
++ HermiteCurve.cpp: Defines the HermiteCurve class for drawing Hermite curves.
+#### 5. Visualizer (Main Project)
+Overview:
+The Visualizer project integrates the functionalities of the Geometry, Transformations, Clipping, and BezierCurve DLLs to create a comprehensive OpenGL-based geometric data visualization tool.
 
-The Visualizer project utilizes the Geometry and Algorithm DLLs to create an interactive graphical interface for users to work with geometric shapes.
+Files:
+OpenGLWindow.cpp: Main application file, using OpenGL for rendering.
+ShapeContainer.cpp: Manages the collection of shapes for visualization.
 
 Features:
 
@@ -39,22 +57,30 @@ Features:
 
 + Clipping: Define a clipping region and clip shapes accordingly.
 
++ Bazier Curve: Draw Bezier curve according to inputted control points.
+
++ Hermite Curve: Draw Hermite curve according to inputted control points.
+
 + Real-time Visualization: Shapes are rendered in real-time through OpenGL, providing immediate feedback on transformations and clipping.
+  
++ Feature implementation : Added shapes are translated.
+  
+### Usage
 
-## Project Screenshots
+1. Initialization:
++ Instantiate the Geometry, Transformations, Clipping, and Bezier Curve classes as needed.
++ Create a ShapeContainer to manage shapes.
+2. Geometric Operations:
++ Use the Geometry DLL to create points, lines, and shapes.
+3. Transformations:
++ Apply transformations (translation, rotation, scaling) using the Transformations DLL.
+4. Clipping:
++ Utilize the Clipping DLL to clip shapes against a specified region.
+5. Curves:
++ Generate Bezier and Hermite curves using the Bezier Curve DLL and Hermite Curve DLL respectively.
+6. OpenGL Visualization:
++ Use OpenGL to visualize the transformed, clipped shapes, and curves in the main Visualizer project.
++ Change color of shapes.
 
-### Initial State
 
-![Initial State]![image](https://github.com/Tejal-Alai/CAGD-QT-project/assets/131939644/cf99125b-d90f-43f7-95a5-38d8dff92010)
-)
-
-
-### Performing Transformations
-
-![Performing Transformations]![image](https://github.com/Tejal-Alai/CAGD-QT-project/assets/131939644/2f5afbec-9abc-4cf5-9458-3ed505166b07)
-
-
-### Clipping in Action
-
-![Clipping in Action]![image](https://github.com/Tejal-Alai/CAGD-QT-project/assets/131939644/eaffef6c-09bf-4ca6-966b-d673eb6b30c5)
 
